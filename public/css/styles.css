@@ -1,0 +1,17 @@
+body {
+    height: 200vh;
+}
+.horizontal-line {
+    width: 100%;
+    border: none;
+    border-top: 1px solid black;
+  }
+.test {
+  color: red;
+}
+#fixed-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
