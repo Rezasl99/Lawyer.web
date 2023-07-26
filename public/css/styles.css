@@ -1,5 +1,11 @@
 body {
     height: 200vh;
+    background-image: url('Back-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
 }
 .horizontal-line {
     width: 100%;
@@ -14,4 +20,12 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
+  }
+  .background-image-container {
+    background-image: url('Back-1.jpg');
+
+  }
+  .hide-navbar {
+    transform: translateY(-200%);
+    transition: transform 0.7s ease;
   }
