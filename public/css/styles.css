@@ -1,9 +1,6 @@
 body {
     height: 200vh;
-    background-image: url('Back-1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: rgb(5, 41, 34);
     
     
 }
@@ -26,6 +23,16 @@ body {
 
   }
   .hide-navbar {
-    transform: translateY(-200%);
-    transition: transform 0.7s ease;
+    opacity: 0; /* Set initial opacity to 0 */
+    visibility: hidden; /* Hide the element, but keep the space it occupies */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Use transition for opacity and visibility */
   }
+  
+  .show-navbar {
+    opacity: 1; /* Set opacity to 1 when showing */
+    visibility: visible; /* Make the element visible */
+    transition: opacity 0.5s ease; /* Use transition for opacity */
+  }
+  .white {
+    color: rgb(255, 255, 255) !important;
+  } 
